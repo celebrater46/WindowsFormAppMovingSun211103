@@ -27,9 +27,14 @@ namespace WindowsFormsAppMovingSun211103
             sun.Move();
             sun.Move();
 
-            pictureBox.Image = sun.image;
-            pictureBox.Top = sun.top;
-            pictureBox.Left = sun.left;
+            // pictureBox.Image = sun.image;
+            // pictureBox.Top = sun.top;
+            // pictureBox.Left = sun.left;
+            
+            pictureBox.Image = sun.GetImage();
+            pictureBox.Top = sun.Top;
+            pictureBox.Left = sun.Left;
+            
             pictureBox.Parent = form1;
             
             Application.Run(form1);

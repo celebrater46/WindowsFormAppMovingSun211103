@@ -4,9 +4,9 @@ namespace WindowsFormsAppMovingSun211103
 {
     public class Sun
     {
-        public Image image;
-        public int top;
-        public int left;
+        private Image image;
+        private int top;
+        private int left;
 
         public Sun()
         {
@@ -19,6 +19,28 @@ namespace WindowsFormsAppMovingSun211103
         {
             top += 10;
             left += 10;
+        }
+
+        public void SetImage(Image i)
+        {
+            image = i;
+        }
+        
+        public Image GetImage()
+        {
+            return image;
+        }
+
+        public int Top
+        {
+            set { top = value; }
+            get { return top; }
+        }
+
+        public int Left
+        {
+            set { left = value; }
+            get { return left; }
         }
     }
 }
